@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Search page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td align='right'>
+                Запрос:
+            </td>
+            <td>
+              <input type="text" name="query" style='width:100%'></input><br>
+        </td>
+    </tr>
+    <tr>
+        <td align='right'>
+            Параметры:
+        </td>
+        <td>
+            <input list='n' name="n">
+              <datalist id="n">
+                <option value="5">
+                <option value="10">
+                <option value="25">
+                <option value="50">
+                <option value="100">
+              </datalist>
+        </td>
+        <td align='center'>
+
+            <button type="submit">Search</button>
+        </td>
+    </tr>
+    </table>
+</form>
+<br>
+Время: {{time}}
+<br>
+{{links|safe}}
+</body>
+</html>
